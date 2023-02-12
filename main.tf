@@ -1,13 +1,13 @@
 provider "aws" {
   alias   = "source"
-  profile = "source"
-  region  = "us-east-2"
+  profile = "maya-terraform-source"
+  region  = "us-east-1"
 }
 
 provider "aws" {
   alias   = "destination"
   profile = "destination"
-  region  = "us-east-2"
+  region  = "us-east-1"
 }
 
 data "aws_caller_identity" "source" {
